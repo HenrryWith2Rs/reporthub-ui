@@ -1,5 +1,5 @@
-# Use the official Node.js 20 image as build stage
-FROM node:20 as build
+# Use the official Node.js 20 image
+FROM node:20
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
@@ -16,17 +16,8 @@ COPY . .
 # Compile TypeScript
 RUN npm run build
 
-# Second stage: Use a lightweight base image like Alpine Linux
-FROM nginx:alpine
+# Expose the port the app runs on
+EXPOSE 5173
 
-# Set the working directory in the container
-WORKDIR /usr/share/nginx/html
-
-# Copy the built application files from the previous stage
-COPY --from=build /usr/src/app/dist .
-
-# Expose the port the NGINX server runs on
-EXPOSE 80
-
-# Start NGINX in the foreground
-CMD ["nginx", "-g", "daemon off;"]
+# Command to run the application
+CMD ["npm", "start"]
