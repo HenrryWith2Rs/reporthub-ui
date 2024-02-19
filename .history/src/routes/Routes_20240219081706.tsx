@@ -8,7 +8,6 @@ import Sidebar from '../pages/global/Sidebar';
 import Topbar from '../pages/global/Topbar';
 import Pie from '../pages/pie';
 import Line from '../pages/line';
-import Geography from '../pages/geography';
 
 type Props = {};
 
@@ -34,7 +33,6 @@ const Routes = (props: Props) => {
             <Route path="/" element={<Home />} />
             <Route path="/pie" element={<Pie />} />
             <Route path="/line" element={<Line />} />
-            <Route path="/geography" element={<Geography />} />
           </Route>
         </Router>
       </div>

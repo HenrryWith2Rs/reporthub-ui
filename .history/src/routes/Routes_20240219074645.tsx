@@ -5,21 +5,18 @@ import ThemeRegistry from '../ThemeRegistry/ThemeRegistry';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Sidebar from '../pages/global/Sidebar';
-import Topbar from '../pages/global/Topbar';
-import Pie from '../pages/pie';
-import Line from '../pages/line';
-import Geography from '../pages/geography';
 
 type Props = {};
 
 const PrivateRoutes = () => {
+  const { authenticated } = useContext(AuthContext);
+
+  if (!authenticated) return <Navigate to="/login" replace />;
+
   return (
     <>
       <Sidebar />
-      <main className="content">
-        <Topbar />
-        <Outlet />
-      </main>
+      <Outlet />
     </>
   );
 };
@@ -32,9 +29,6 @@ const Routes = (props: Props) => {
           <Route path="/login" element={<Login />} />
           <Route element={<PrivateRoutes />}>
             <Route path="/" element={<Home />} />
-            <Route path="/pie" element={<Pie />} />
-            <Route path="/line" element={<Line />} />
-            <Route path="/geography" element={<Geography />} />
           </Route>
         </Router>
       </div>

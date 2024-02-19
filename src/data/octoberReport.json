@@ -1,0 +1,1580 @@
+[
+  {
+    "Date": "2023-10-13",
+    "Report": [
+      {
+        "Description": "Total Appointment Calls to MOD",
+        "Value": 9455,
+        "Intent": "Summary",
+        "Order": "1"
+      },
+      {
+        "Description": "Calls remained within MOD IVR (Not transferred to BOT)",
+        "Value": 6557,
+        "Intent": "Summary",
+        "Order": "2"
+      },
+      {
+        "Description": "Missing Records in BOT (Platform Bug)",
+        "Value": "NA",
+        "Intent": "Summary",
+        "Order": "3"
+      },
+      {
+        "Description": "Total Appointment Calls from MOD to Bot",
+        "Value": 2904,
+        "Intent": "Summary",
+        "Order": "4"
+      },
+      {
+        "Description": "Transfers to BOT after Intercept",
+        "Value": 2795,
+        "Intent": "Summary",
+        "Order": "5"
+      },
+      {
+        "Description": "Transfers to BOT after MOD NLU",
+        "Value": 109,
+        "Intent": "Summary",
+        "Order": "6"
+      },
+      {
+        "Description": "Total Confirm Intent",
+        "Value": 3211,
+        "Intent": "Confirm",
+        "Order": "7"
+      },
+      {
+        "Description": "Confirm Calls MOD Intercept (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "8"
+      },
+      {
+        "Description": "Confirm Calls MOD NLU (Proactive and Explicit)",
+        "Value": 72,
+        "Intent": "Confirm",
+        "Order": "9"
+      },
+      {
+        "Description": "Confirm Success (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "10"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Attempted",
+        "Value": 2897,
+        "Intent": "Confirm",
+        "Order": "11"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Success",
+        "Value": 2852,
+        "Intent": "Confirm",
+        "Order": "12"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Failure",
+        "Value": 45,
+        "Intent": "Confirm",
+        "Order": "13"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Transfer",
+        "Value": 0,
+        "Intent": "Confirm",
+        "Order": "14"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Attempted",
+        "Value": 314,
+        "Intent": "Confirm",
+        "Order": "15"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Success",
+        "Value": 308,
+        "Intent": "Confirm",
+        "Order": "16"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Failure",
+        "Value": 0,
+        "Intent": "Confirm",
+        "Order": "17"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Transfer",
+        "Value": 6,
+        "Intent": "Confirm",
+        "Order": "18"
+      },
+      {
+        "Description": "Cancel Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Cancel",
+        "Order": "19"
+      },
+      {
+        "Description": "Cancel Calls MOD NLU",
+        "Value": 225,
+        "Intent": "Cancel",
+        "Order": "20"
+      },
+      {
+        "Description": "Cancel -Attempted",
+        "Value": 764,
+        "Intent": "Cancel",
+        "Order": "21"
+      },
+      {
+        "Description": "Cancel - Success",
+        "Value": 652,
+        "Intent": "Cancel",
+        "Order": "22"
+      },
+      {
+        "Description": "Cancel - Failure",
+        "Value": 2,
+        "Intent": "Cancel",
+        "Order": "23"
+      },
+      {
+        "Description": "Cancel - Transfer (Including Ineligible)",
+        "Value": 110,
+        "Intent": "Cancel",
+        "Order": "24"
+      },
+      {
+        "Description": "Cancel - Ineligible",
+        "Value": 86,
+        "Intent": "Cancel",
+        "Order": "25"
+      },
+      {
+        "Description": "Reschedule Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Reschedule",
+        "Order": "26"
+      },
+      {
+        "Description": "Reschedule Calls MOD NLU",
+        "Value": 53,
+        "Intent": "Reschedule",
+        "Order": "27"
+      },
+      {
+        "Description": "Reschedule - Attempted",
+        "Value": 729,
+        "Intent": "Reschedule",
+        "Order": "28"
+      },
+      {
+        "Description": "Reschedule - Success",
+        "Value": 604,
+        "Intent": "Reschedule",
+        "Order": "29"
+      },
+      {
+        "Description": "Reschedule - Failure",
+        "Value": 8,
+        "Intent": "Reschedule",
+        "Order": "30"
+      },
+      {
+        "Description": "Reschedule - Transfer (Including Ineligible)",
+        "Value": 117,
+        "Intent": "Reschedule",
+        "Order": "31"
+      },
+      {
+        "Description": "Reschedule - Ineligible",
+        "Value": 69,
+        "Intent": "Reschedule",
+        "Order": "32"
+      },
+      {
+        "Description": "Glympse Offer - Attempted",
+        "Value": 19,
+        "Intent": "Glympse",
+        "Order": "33"
+      },
+      {
+        "Description": "Glympse Offer - Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "34"
+      },
+      {
+        "Description": "Glympse Offer - Failure",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "35"
+      },
+      {
+        "Description": "Glympse Offer - Not Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "36"
+      },
+      {
+        "Description": "Do I need to be at home ?",
+        "Value": 6,
+        "Intent": "FAQ",
+        "Order": "37"
+      },
+      {
+        "Description": "Is there any Fee for the appointment?",
+        "Value": 11,
+        "Intent": "FAQ",
+        "Order": "38"
+      },
+      {
+        "Description": "I have a missed call from spectrum ?",
+        "Value": 121,
+        "Intent": "FAQ",
+        "Order": "39"
+      },
+      {
+        "Description": "How long does it take to complete the work?",
+        "Value": 5,
+        "Intent": "FAQ",
+        "Order": "40"
+      },
+      {
+        "Description": "How old does the person need to be to meet with the technician?",
+        "Value": 6,
+        "Intent": "FAQ",
+        "Order": "41"
+      },
+      {
+        "Description": "Do you call me before you start?",
+        "Value": 3,
+        "Intent": "FAQ",
+        "Order": "42"
+      },
+      {
+        "Description": "Can I manage my appointments online?",
+        "Value": 1,
+        "Intent": "FAQ",
+        "Order": "43"
+      }
+    ]
+  },
+  {
+    "Date": "2023-10-14",
+    "Report": [
+      {
+        "Description": "Total Appointment Calls to MOD",
+        "Value": 7818,
+        "Intent": "Summary",
+        "Order": "1"
+      },
+      {
+        "Description": "Calls remained within MOD IVR (Not transferred to BOT)",
+        "Value": 5454,
+        "Intent": "Summary",
+        "Order": "2"
+      },
+      {
+        "Description": "Missing Records in BOT (Platform Bug)",
+        "Value": "NA",
+        "Intent": "Summary",
+        "Order": "3"
+      },
+      {
+        "Description": "Total Appointment Calls from MOD to Bot",
+        "Value": 2366,
+        "Intent": "Summary",
+        "Order": "4"
+      },
+      {
+        "Description": "Transfers to BOT after Intercept",
+        "Value": 2304,
+        "Intent": "Summary",
+        "Order": "5"
+      },
+      {
+        "Description": "Transfers to BOT after MOD NLU",
+        "Value": 62,
+        "Intent": "Summary",
+        "Order": "6"
+      },
+      {
+        "Description": "Total Confirm Intent",
+        "Value": 2649,
+        "Intent": "Confirm",
+        "Order": "7"
+      },
+      {
+        "Description": "Confirm Calls MOD Intercept (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "8"
+      },
+      {
+        "Description": "Confirm Calls MOD NLU (Proactive and Explicit)",
+        "Value": 54,
+        "Intent": "Confirm",
+        "Order": "9"
+      },
+      {
+        "Description": "Confirm Success (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "10"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Attempted",
+        "Value": 2364,
+        "Intent": "Confirm",
+        "Order": "11"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Success",
+        "Value": 2344,
+        "Intent": "Confirm",
+        "Order": "12"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Failure",
+        "Value": 20,
+        "Intent": "Confirm",
+        "Order": "13"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Transfer",
+        "Value": 0,
+        "Intent": "Confirm",
+        "Order": "14"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Attempted",
+        "Value": 285,
+        "Intent": "Confirm",
+        "Order": "15"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Success",
+        "Value": 275,
+        "Intent": "Confirm",
+        "Order": "16"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Failure",
+        "Value": 0,
+        "Intent": "Confirm",
+        "Order": "17"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Transfer",
+        "Value": 10,
+        "Intent": "Confirm",
+        "Order": "18"
+      },
+      {
+        "Description": "Cancel Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Cancel",
+        "Order": "19"
+      },
+      {
+        "Description": "Cancel Calls MOD NLU",
+        "Value": 180,
+        "Intent": "Cancel",
+        "Order": "20"
+      },
+      {
+        "Description": "Cancel -Attempted",
+        "Value": 652,
+        "Intent": "Cancel",
+        "Order": "21"
+      },
+      {
+        "Description": "Cancel - Success",
+        "Value": 571,
+        "Intent": "Cancel",
+        "Order": "22"
+      },
+      {
+        "Description": "Cancel - Failure",
+        "Value": 1,
+        "Intent": "Cancel",
+        "Order": "23"
+      },
+      {
+        "Description": "Cancel - Transfer (Including Ineligible)",
+        "Value": 80,
+        "Intent": "Cancel",
+        "Order": "24"
+      },
+      {
+        "Description": "Cancel - Ineligible",
+        "Value": 65,
+        "Intent": "Cancel",
+        "Order": "25"
+      },
+      {
+        "Description": "Reschedule Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Reschedule",
+        "Order": "26"
+      },
+      {
+        "Description": "Reschedule Calls MOD NLU",
+        "Value": 28,
+        "Intent": "Reschedule",
+        "Order": "27"
+      },
+      {
+        "Description": "Reschedule - Attempted",
+        "Value": 453,
+        "Intent": "Reschedule",
+        "Order": "28"
+      },
+      {
+        "Description": "Reschedule - Success",
+        "Value": 385,
+        "Intent": "Reschedule",
+        "Order": "29"
+      },
+      {
+        "Description": "Reschedule - Failure",
+        "Value": 1,
+        "Intent": "Reschedule",
+        "Order": "30"
+      },
+      {
+        "Description": "Reschedule - Transfer (Including Ineligible)",
+        "Value": 67,
+        "Intent": "Reschedule",
+        "Order": "31"
+      },
+      {
+        "Description": "Reschedule - Ineligible",
+        "Value": 40,
+        "Intent": "Reschedule",
+        "Order": "32"
+      },
+      {
+        "Description": "Glympse Offer - Attempted",
+        "Value": 30,
+        "Intent": "Glympse",
+        "Order": "33"
+      },
+      {
+        "Description": "Glympse Offer - Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "34"
+      },
+      {
+        "Description": "Glympse Offer - Failure",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "35"
+      },
+      {
+        "Description": "Glympse Offer - Not Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "36"
+      },
+      {
+        "Description": "Do I need to be at home ?",
+        "Value": 3,
+        "Intent": "FAQ",
+        "Order": "37"
+      },
+      {
+        "Description": "Is there any Fee for the appointment?",
+        "Value": 16,
+        "Intent": "FAQ",
+        "Order": "38"
+      },
+      {
+        "Description": "I have a missed call from spectrum ?",
+        "Value": 103,
+        "Intent": "FAQ",
+        "Order": "39"
+      },
+      {
+        "Description": "How long does it take to complete the work?",
+        "Value": 3,
+        "Intent": "FAQ",
+        "Order": "40"
+      },
+      {
+        "Description": "How old does the person need to be to meet with the technician?",
+        "Value": 3,
+        "Intent": "FAQ",
+        "Order": "41"
+      },
+      {
+        "Description": "Do you call me before you start?",
+        "Value": 2,
+        "Intent": "FAQ",
+        "Order": "42"
+      },
+      {
+        "Description": "Can I manage my appointments online?",
+        "Value": 0,
+        "Intent": "FAQ",
+        "Order": "43"
+      }
+    ]
+  },
+  {
+    "Date": "2023-10-15",
+    "Report": [
+      {
+        "Description": "Total Appointment Calls to MOD",
+        "Value": 6061,
+        "Intent": "Summary",
+        "Order": "1"
+      },
+      {
+        "Description": "Calls remained within MOD IVR (Not transferred to BOT)",
+        "Value": 4084,
+        "Intent": "Summary",
+        "Order": "2"
+      },
+      {
+        "Description": "Missing Records in BOT (Platform Bug)",
+        "Value": "NA",
+        "Intent": "Summary",
+        "Order": "3"
+      },
+      {
+        "Description": "Total Appointment Calls from MOD to Bot",
+        "Value": 1977,
+        "Intent": "Summary",
+        "Order": "4"
+      },
+      {
+        "Description": "Transfers to BOT after Intercept",
+        "Value": 1906,
+        "Intent": "Summary",
+        "Order": "5"
+      },
+      {
+        "Description": "Transfers to BOT after MOD NLU",
+        "Value": 71,
+        "Intent": "Summary",
+        "Order": "6"
+      },
+      {
+        "Description": "Total Confirm Intent",
+        "Value": 2167,
+        "Intent": "Confirm",
+        "Order": "7"
+      },
+      {
+        "Description": "Confirm Calls MOD Intercept (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "8"
+      },
+      {
+        "Description": "Confirm Calls MOD NLU (Proactive and Explicit)",
+        "Value": 34,
+        "Intent": "Confirm",
+        "Order": "9"
+      },
+      {
+        "Description": "Confirm Success (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "10"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Attempted",
+        "Value": 1978,
+        "Intent": "Confirm",
+        "Order": "11"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Success",
+        "Value": 1956,
+        "Intent": "Confirm",
+        "Order": "12"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Failure",
+        "Value": 22,
+        "Intent": "Confirm",
+        "Order": "13"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Transfer",
+        "Value": 0,
+        "Intent": "Confirm",
+        "Order": "14"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Attempted",
+        "Value": 189,
+        "Intent": "Confirm",
+        "Order": "15"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Success",
+        "Value": 181,
+        "Intent": "Confirm",
+        "Order": "16"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Failure",
+        "Value": 1,
+        "Intent": "Confirm",
+        "Order": "17"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Transfer",
+        "Value": 7,
+        "Intent": "Confirm",
+        "Order": "18"
+      },
+      {
+        "Description": "Cancel Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Cancel",
+        "Order": "19"
+      },
+      {
+        "Description": "Cancel Calls MOD NLU",
+        "Value": 175,
+        "Intent": "Cancel",
+        "Order": "20"
+      },
+      {
+        "Description": "Cancel -Attempted",
+        "Value": 635,
+        "Intent": "Cancel",
+        "Order": "21"
+      },
+      {
+        "Description": "Cancel - Success",
+        "Value": 572,
+        "Intent": "Cancel",
+        "Order": "22"
+      },
+      {
+        "Description": "Cancel - Failure",
+        "Value": 6,
+        "Intent": "Cancel",
+        "Order": "23"
+      },
+      {
+        "Description": "Cancel - Transfer (Including Ineligible)",
+        "Value": 57,
+        "Intent": "Cancel",
+        "Order": "24"
+      },
+      {
+        "Description": "Cancel - Ineligible",
+        "Value": 48,
+        "Intent": "Cancel",
+        "Order": "25"
+      },
+      {
+        "Description": "Reschedule Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Reschedule",
+        "Order": "26"
+      },
+      {
+        "Description": "Reschedule Calls MOD NLU",
+        "Value": 31,
+        "Intent": "Reschedule",
+        "Order": "27"
+      },
+      {
+        "Description": "Reschedule - Attempted",
+        "Value": 400,
+        "Intent": "Reschedule",
+        "Order": "28"
+      },
+      {
+        "Description": "Reschedule - Success",
+        "Value": 339,
+        "Intent": "Reschedule",
+        "Order": "29"
+      },
+      {
+        "Description": "Reschedule - Failure",
+        "Value": 5,
+        "Intent": "Reschedule",
+        "Order": "30"
+      },
+      {
+        "Description": "Reschedule - Transfer (Including Ineligible)",
+        "Value": 56,
+        "Intent": "Reschedule",
+        "Order": "31"
+      },
+      {
+        "Description": "Reschedule - Ineligible",
+        "Value": 37,
+        "Intent": "Reschedule",
+        "Order": "32"
+      },
+      {
+        "Description": "Glympse Offer - Attempted",
+        "Value": 15,
+        "Intent": "Glympse",
+        "Order": "33"
+      },
+      {
+        "Description": "Glympse Offer - Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "34"
+      },
+      {
+        "Description": "Glympse Offer - Failure",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "35"
+      },
+      {
+        "Description": "Glympse Offer - Not Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "36"
+      },
+      {
+        "Description": "Do I need to be at home ?",
+        "Value": 4,
+        "Intent": "FAQ",
+        "Order": "37"
+      },
+      {
+        "Description": "Is there any Fee for the appointment?",
+        "Value": 6,
+        "Intent": "FAQ",
+        "Order": "38"
+      },
+      {
+        "Description": "I have a missed call from spectrum ?",
+        "Value": 74,
+        "Intent": "FAQ",
+        "Order": "39"
+      },
+      {
+        "Description": "How long does it take to complete the work?",
+        "Value": 6,
+        "Intent": "FAQ",
+        "Order": "40"
+      },
+      {
+        "Description": "How old does the person need to be to meet with the technician?",
+        "Value": 4,
+        "Intent": "FAQ",
+        "Order": "41"
+      },
+      {
+        "Description": "Do you call me before you start?",
+        "Value": 5,
+        "Intent": "FAQ",
+        "Order": "42"
+      },
+      {
+        "Description": "Can I manage my appointments online?",
+        "Value": 0,
+        "Intent": "FAQ",
+        "Order": "43"
+      }
+    ]
+  },
+  {
+    "Date": "2023-10-16",
+    "Report": [
+      {
+        "Description": "Total Appointment Calls to MOD",
+        "Value": 9612,
+        "Intent": "Summary",
+        "Order": "1"
+      },
+      {
+        "Description": "Calls remained within MOD IVR (Not transferred to BOT)",
+        "Value": 6492,
+        "Intent": "Summary",
+        "Order": "2"
+      },
+      {
+        "Description": "Missing Records in BOT (Platform Bug)",
+        "Value": "NA",
+        "Intent": "Summary",
+        "Order": "3"
+      },
+      {
+        "Description": "Total Appointment Calls from MOD to Bot",
+        "Value": 3121,
+        "Intent": "Summary",
+        "Order": "4"
+      },
+      {
+        "Description": "Transfers to BOT after Intercept",
+        "Value": 3024,
+        "Intent": "Summary",
+        "Order": "5"
+      },
+      {
+        "Description": "Transfers to BOT after MOD NLU",
+        "Value": 97,
+        "Intent": "Summary",
+        "Order": "6"
+      },
+      {
+        "Description": "Total Confirm Intent",
+        "Value": 3430,
+        "Intent": "Confirm",
+        "Order": "7"
+      },
+      {
+        "Description": "Confirm Calls MOD Intercept (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "8"
+      },
+      {
+        "Description": "Confirm Calls MOD NLU (Proactive and Explicit)",
+        "Value": 66,
+        "Intent": "Confirm",
+        "Order": "9"
+      },
+      {
+        "Description": "Confirm Success (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "10"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Attempted",
+        "Value": 3120,
+        "Intent": "Confirm",
+        "Order": "11"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Success",
+        "Value": 3072,
+        "Intent": "Confirm",
+        "Order": "12"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Failure",
+        "Value": 48,
+        "Intent": "Confirm",
+        "Order": "13"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Transfer",
+        "Value": 0,
+        "Intent": "Confirm",
+        "Order": "14"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Attempted",
+        "Value": 310,
+        "Intent": "Confirm",
+        "Order": "15"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Success",
+        "Value": 298,
+        "Intent": "Confirm",
+        "Order": "16"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Failure",
+        "Value": 1,
+        "Intent": "Confirm",
+        "Order": "17"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Transfer",
+        "Value": 11,
+        "Intent": "Confirm",
+        "Order": "18"
+      },
+      {
+        "Description": "Cancel Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Cancel",
+        "Order": "19"
+      },
+      {
+        "Description": "Cancel Calls MOD NLU",
+        "Value": 207,
+        "Intent": "Cancel",
+        "Order": "20"
+      },
+      {
+        "Description": "Cancel -Attempted",
+        "Value": 886,
+        "Intent": "Cancel",
+        "Order": "21"
+      },
+      {
+        "Description": "Cancel - Success",
+        "Value": 757,
+        "Intent": "Cancel",
+        "Order": "22"
+      },
+      {
+        "Description": "Cancel - Failure",
+        "Value": 3,
+        "Intent": "Cancel",
+        "Order": "23"
+      },
+      {
+        "Description": "Cancel - Transfer (Including Ineligible)",
+        "Value": 126,
+        "Intent": "Cancel",
+        "Order": "24"
+      },
+      {
+        "Description": "Cancel - Ineligible",
+        "Value": 109,
+        "Intent": "Cancel",
+        "Order": "25"
+      },
+      {
+        "Description": "Reschedule Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Reschedule",
+        "Order": "26"
+      },
+      {
+        "Description": "Reschedule Calls MOD NLU",
+        "Value": 65,
+        "Intent": "Reschedule",
+        "Order": "27"
+      },
+      {
+        "Description": "Reschedule - Attempted",
+        "Value": 727,
+        "Intent": "Reschedule",
+        "Order": "28"
+      },
+      {
+        "Description": "Reschedule - Success",
+        "Value": 575,
+        "Intent": "Reschedule",
+        "Order": "29"
+      },
+      {
+        "Description": "Reschedule - Failure",
+        "Value": 8,
+        "Intent": "Reschedule",
+        "Order": "30"
+      },
+      {
+        "Description": "Reschedule - Transfer (Including Ineligible)",
+        "Value": 144,
+        "Intent": "Reschedule",
+        "Order": "31"
+      },
+      {
+        "Description": "Reschedule - Ineligible",
+        "Value": 99,
+        "Intent": "Reschedule",
+        "Order": "32"
+      },
+      {
+        "Description": "Glympse Offer - Attempted",
+        "Value": 20,
+        "Intent": "Glympse",
+        "Order": "33"
+      },
+      {
+        "Description": "Glympse Offer - Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "34"
+      },
+      {
+        "Description": "Glympse Offer - Failure",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "35"
+      },
+      {
+        "Description": "Glympse Offer - Not Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "36"
+      },
+      {
+        "Description": "Do I need to be at home ?",
+        "Value": 2,
+        "Intent": "FAQ",
+        "Order": "37"
+      },
+      {
+        "Description": "Is there any Fee for the appointment?",
+        "Value": 11,
+        "Intent": "FAQ",
+        "Order": "38"
+      },
+      {
+        "Description": "I have a missed call from spectrum ?",
+        "Value": 107,
+        "Intent": "FAQ",
+        "Order": "39"
+      },
+      {
+        "Description": "How long does it take to complete the work?",
+        "Value": 4,
+        "Intent": "FAQ",
+        "Order": "40"
+      },
+      {
+        "Description": "How old does the person need to be to meet with the technician?",
+        "Value": 2,
+        "Intent": "FAQ",
+        "Order": "41"
+      },
+      {
+        "Description": "Do you call me before you start?",
+        "Value": 3,
+        "Intent": "FAQ",
+        "Order": "42"
+      },
+      {
+        "Description": "Can I manage my appointments online?",
+        "Value": 0,
+        "Intent": "FAQ",
+        "Order": "43"
+      }
+    ]
+  },
+  {
+    "Date": "2023-10-17",
+    "Report": [
+      {
+        "Description": "Total Appointment Calls to MOD",
+        "Value": 10217,
+        "Intent": "Summary",
+        "Order": "1"
+      },
+      {
+        "Description": "Calls remained within MOD IVR (Not transferred to BOT)",
+        "Value": 7062,
+        "Intent": "Summary",
+        "Order": "2"
+      },
+      {
+        "Description": "Missing Records in BOT (Platform Bug)",
+        "Value": "NA",
+        "Intent": "Summary",
+        "Order": "3"
+      },
+      {
+        "Description": "Total Appointment Calls from MOD to Bot",
+        "Value": 3156,
+        "Intent": "Summary",
+        "Order": "4"
+      },
+      {
+        "Description": "Transfers to BOT after Intercept",
+        "Value": 3017,
+        "Intent": "Summary",
+        "Order": "5"
+      },
+      {
+        "Description": "Transfers to BOT after MOD NLU",
+        "Value": 139,
+        "Intent": "Summary",
+        "Order": "6"
+      },
+      {
+        "Description": "Total Confirm Intent",
+        "Value": 3482,
+        "Intent": "Confirm",
+        "Order": "7"
+      },
+      {
+        "Description": "Confirm Calls MOD Intercept (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "8"
+      },
+      {
+        "Description": "Confirm Calls MOD NLU (Proactive and Explicit)",
+        "Value": 83,
+        "Intent": "Confirm",
+        "Order": "9"
+      },
+      {
+        "Description": "Confirm Success (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "10"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Attempted",
+        "Value": 3155,
+        "Intent": "Confirm",
+        "Order": "11"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Success",
+        "Value": 3094,
+        "Intent": "Confirm",
+        "Order": "12"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Failure",
+        "Value": 61,
+        "Intent": "Confirm",
+        "Order": "13"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Transfer",
+        "Value": 0,
+        "Intent": "Confirm",
+        "Order": "14"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Attempted",
+        "Value": 327,
+        "Intent": "Confirm",
+        "Order": "15"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Success",
+        "Value": 313,
+        "Intent": "Confirm",
+        "Order": "16"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Failure",
+        "Value": 3,
+        "Intent": "Confirm",
+        "Order": "17"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Transfer",
+        "Value": 11,
+        "Intent": "Confirm",
+        "Order": "18"
+      },
+      {
+        "Description": "Cancel Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Cancel",
+        "Order": "19"
+      },
+      {
+        "Description": "Cancel Calls MOD NLU",
+        "Value": 288,
+        "Intent": "Cancel",
+        "Order": "20"
+      },
+      {
+        "Description": "Cancel -Attempted",
+        "Value": 782,
+        "Intent": "Cancel",
+        "Order": "21"
+      },
+      {
+        "Description": "Cancel - Success",
+        "Value": 662,
+        "Intent": "Cancel",
+        "Order": "22"
+      },
+      {
+        "Description": "Cancel - Failure",
+        "Value": 0,
+        "Intent": "Cancel",
+        "Order": "23"
+      },
+      {
+        "Description": "Cancel - Transfer (Including Ineligible)",
+        "Value": 120,
+        "Intent": "Cancel",
+        "Order": "24"
+      },
+      {
+        "Description": "Cancel - Ineligible",
+        "Value": 99,
+        "Intent": "Cancel",
+        "Order": "25"
+      },
+      {
+        "Description": "Reschedule Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Reschedule",
+        "Order": "26"
+      },
+      {
+        "Description": "Reschedule Calls MOD NLU",
+        "Value": 64,
+        "Intent": "Reschedule",
+        "Order": "27"
+      },
+      {
+        "Description": "Reschedule - Attempted",
+        "Value": 804,
+        "Intent": "Reschedule",
+        "Order": "28"
+      },
+      {
+        "Description": "Reschedule - Success",
+        "Value": 655,
+        "Intent": "Reschedule",
+        "Order": "29"
+      },
+      {
+        "Description": "Reschedule - Failure",
+        "Value": 7,
+        "Intent": "Reschedule",
+        "Order": "30"
+      },
+      {
+        "Description": "Reschedule - Transfer (Including Ineligible)",
+        "Value": 142,
+        "Intent": "Reschedule",
+        "Order": "31"
+      },
+      {
+        "Description": "Reschedule - Ineligible",
+        "Value": 93,
+        "Intent": "Reschedule",
+        "Order": "32"
+      },
+      {
+        "Description": "Glympse Offer - Attempted",
+        "Value": 31,
+        "Intent": "Glympse",
+        "Order": "33"
+      },
+      {
+        "Description": "Glympse Offer - Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "34"
+      },
+      {
+        "Description": "Glympse Offer - Failure",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "35"
+      },
+      {
+        "Description": "Glympse Offer - Not Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "36"
+      },
+      {
+        "Description": "Do I need to be at home ?",
+        "Value": 6,
+        "Intent": "FAQ",
+        "Order": "37"
+      },
+      {
+        "Description": "Is there any Fee for the appointment?",
+        "Value": 14,
+        "Intent": "FAQ",
+        "Order": "38"
+      },
+      {
+        "Description": "I have a missed call from spectrum ?",
+        "Value": 119,
+        "Intent": "FAQ",
+        "Order": "39"
+      },
+      {
+        "Description": "How long does it take to complete the work?",
+        "Value": 3,
+        "Intent": "FAQ",
+        "Order": "40"
+      },
+      {
+        "Description": "How old does the person need to be to meet with the technician?",
+        "Value": 6,
+        "Intent": "FAQ",
+        "Order": "41"
+      },
+      {
+        "Description": "Do you call me before you start?",
+        "Value": 6,
+        "Intent": "FAQ",
+        "Order": "42"
+      },
+      {
+        "Description": "Can I manage my appointments online?",
+        "Value": 0,
+        "Intent": "FAQ",
+        "Order": "43"
+      }
+    ]
+  },
+  {
+    "Date": "2023-10-18",
+    "Report": [
+      {
+        "Description": "Total Appointment Calls to MOD",
+        "Value": 9818,
+        "Intent": "Summary",
+        "Order": "1"
+      },
+      {
+        "Description": "Calls remained within MOD IVR (Not transferred to BOT)",
+        "Value": 5481,
+        "Intent": "Summary",
+        "Order": "2"
+      },
+      {
+        "Description": "Missing Records in BOT (Platform Bug)",
+        "Value": "NA",
+        "Intent": "Summary",
+        "Order": "3"
+      },
+      {
+        "Description": "Total Appointment Calls from MOD to Bot",
+        "Value": 4347,
+        "Intent": "Summary",
+        "Order": "4"
+      },
+      {
+        "Description": "Transfers to BOT after Intercept",
+        "Value": 4197,
+        "Intent": "Summary",
+        "Order": "5"
+      },
+      {
+        "Description": "Transfers to BOT after MOD NLU",
+        "Value": 150,
+        "Intent": "Summary",
+        "Order": "6"
+      },
+      {
+        "Description": "Total Confirm Intent",
+        "Value": 4773,
+        "Intent": "Confirm",
+        "Order": "7"
+      },
+      {
+        "Description": "Confirm Calls MOD Intercept (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "8"
+      },
+      {
+        "Description": "Confirm Calls MOD NLU (Proactive and Explicit)",
+        "Value": 73,
+        "Intent": "Confirm",
+        "Order": "9"
+      },
+      {
+        "Description": "Confirm Success (Proactive and Explicit)",
+        "Value": "NA",
+        "Intent": "Confirm",
+        "Order": "10"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Attempted",
+        "Value": 4337,
+        "Intent": "Confirm",
+        "Order": "11"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Success",
+        "Value": 4260,
+        "Intent": "Confirm",
+        "Order": "12"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Failure",
+        "Value": 77,
+        "Intent": "Confirm",
+        "Order": "13"
+      },
+      {
+        "Description": "Proactive Confirm Readout - Transfer",
+        "Value": 0,
+        "Intent": "Confirm",
+        "Order": "14"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Attempted",
+        "Value": 436,
+        "Intent": "Confirm",
+        "Order": "15"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Success",
+        "Value": 425,
+        "Intent": "Confirm",
+        "Order": "16"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Failure",
+        "Value": 1,
+        "Intent": "Confirm",
+        "Order": "17"
+      },
+      {
+        "Description": "Explicit Confirm Readout - Transfer",
+        "Value": 10,
+        "Intent": "Confirm",
+        "Order": "18"
+      },
+      {
+        "Description": "Cancel Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Cancel",
+        "Order": "19"
+      },
+      {
+        "Description": "Cancel Calls MOD NLU",
+        "Value": 264,
+        "Intent": "Cancel",
+        "Order": "20"
+      },
+      {
+        "Description": "Cancel -Attempted",
+        "Value": 1133,
+        "Intent": "Cancel",
+        "Order": "21"
+      },
+      {
+        "Description": "Cancel - Success",
+        "Value": 967,
+        "Intent": "Cancel",
+        "Order": "22"
+      },
+      {
+        "Description": "Cancel - Failure",
+        "Value": 1,
+        "Intent": "Cancel",
+        "Order": "23"
+      },
+      {
+        "Description": "Cancel - Transfer (Including Ineligible)",
+        "Value": 165,
+        "Intent": "Cancel",
+        "Order": "24"
+      },
+      {
+        "Description": "Cancel - Ineligible",
+        "Value": 140,
+        "Intent": "Cancel",
+        "Order": "25"
+      },
+      {
+        "Description": "Reschedule Calls MOD Intercept",
+        "Value": "NA",
+        "Intent": "Reschedule",
+        "Order": "26"
+      },
+      {
+        "Description": "Reschedule Calls MOD NLU",
+        "Value": 45,
+        "Intent": "Reschedule",
+        "Order": "27"
+      },
+      {
+        "Description": "Reschedule - Attempted",
+        "Value": 1013,
+        "Intent": "Reschedule",
+        "Order": "28"
+      },
+      {
+        "Description": "Reschedule - Success",
+        "Value": 848,
+        "Intent": "Reschedule",
+        "Order": "29"
+      },
+      {
+        "Description": "Reschedule - Failure",
+        "Value": 5,
+        "Intent": "Reschedule",
+        "Order": "30"
+      },
+      {
+        "Description": "Reschedule - Transfer (Including Ineligible)",
+        "Value": 160,
+        "Intent": "Reschedule",
+        "Order": "31"
+      },
+      {
+        "Description": "Reschedule - Ineligible",
+        "Value": 105,
+        "Intent": "Reschedule",
+        "Order": "32"
+      },
+      {
+        "Description": "Glympse Offer - Attempted",
+        "Value": 32,
+        "Intent": "Glympse",
+        "Order": "33"
+      },
+      {
+        "Description": "Glympse Offer - Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "34"
+      },
+      {
+        "Description": "Glympse Offer - Failure",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "35"
+      },
+      {
+        "Description": "Glympse Offer - Not Accepted",
+        "Value": "NA",
+        "Intent": "Glympse",
+        "Order": "36"
+      },
+      {
+        "Description": "Do I need to be at home ?",
+        "Value": 11,
+        "Intent": "FAQ",
+        "Order": "37"
+      },
+      {
+        "Description": "Is there any Fee for the appointment?",
+        "Value": 32,
+        "Intent": "FAQ",
+        "Order": "38"
+      },
+      {
+        "Description": "I have a missed call from spectrum ?",
+        "Value": 151,
+        "Intent": "FAQ",
+        "Order": "39"
+      },
+      {
+        "Description": "How long does it take to complete the work?",
+        "Value": 13,
+        "Intent": "FAQ",
+        "Order": "40"
+      },
+      {
+        "Description": "How old does the person need to be to meet with the technician?",
+        "Value": 11,
+        "Intent": "FAQ",
+        "Order": "41"
+      },
+      {
+        "Description": "Do you call me before you start?",
+        "Value": 5,
+        "Intent": "FAQ",
+        "Order": "42"
+      },
+      {
+        "Description": "Can I manage my appointments online?",
+        "Value": 1,
+        "Intent": "FAQ",
+        "Order": "43"
+      }
+    ]
+  }
+]
