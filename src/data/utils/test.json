@@ -1,0 +1,87 @@
+{
+  "success": true,
+  "message": [
+    {
+      "date": "2023-12-15",
+      "resultSet": [
+        {
+          "Cell_Percentage": "C2",
+          "Cell_Result": "B2",
+          "Description": "Total Appointment Calls to MOD",
+          "Order": 1,
+          "Percentage": "100",
+          "Result": 6471,
+          "Tags": "appointment detailed,summary"
+        },
+        {
+          "Cell_Percentage": "C3",
+          "Cell_Result": "B3",
+          "Description": "Calls remained within MOD IVR (Not transferred to BOT)",
+          "Order": 2,
+          "Percentage": 33.47,
+          "Result": 2166,
+          "Tags": "appointment detailed,summary"
+        },
+        {
+          "Cell_Percentage": "C4",
+          "Cell_Result": "B4",
+          "Description": "Missing Records in BOT (Platform Bug)",
+          "Order": 3,
+          "Percentage": 0.09,
+          "Result": 6,
+          "Tags": "appointment detailed,summary"
+        },
+        {
+          "Cell_Percentage": "C5",
+          "Cell_Result": "B5",
+          "Description": "Total Appointment Calls from MOD to Bot",
+          "Order": 4,
+          "Percentage": 66.54,
+          "Result": 4306,
+          "Tags": "appointment detailed,summary"
+        }
+      ]
+    },
+    {
+      "date": "2023-12-16",
+      "resultSet": [
+        {
+          "Cell_Percentage": "C2",
+          "Cell_Result": "B2",
+          "Description": "Total Appointment Calls to MOD",
+          "Order": 1,
+          "Percentage": "100",
+          "Result": 5185,
+          "Tags": "appointment detailed,summary"
+        },
+        {
+          "Cell_Percentage": "C3",
+          "Cell_Result": "B3",
+          "Description": "Calls remained within MOD IVR (Not transferred to BOT)",
+          "Order": 2,
+          "Percentage": 32.67,
+          "Result": 1694,
+          "Tags": "appointment detailed,summary"
+        },
+        {
+          "Cell_Percentage": "C4",
+          "Cell_Result": "B4",
+          "Description": "Missing Records in BOT (Platform Bug)",
+          "Order": 3,
+          "Percentage": 0.02,
+          "Result": 1,
+          "Tags": "appointment detailed,summary"
+        },
+        {
+          "Cell_Percentage": "C5",
+          "Cell_Result": "B5",
+          "Description": "Total Appointment Calls from MOD to Bot",
+          "Order": 4,
+          "Percentage": 67.33,
+          "Result": 3491,
+          "Tags": "appointment detailed,summary"
+        }
+      ]
+    }
+  ]
+}
