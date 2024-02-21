@@ -97,11 +97,11 @@ const Dashboard = () => {
   } else {
     if (ApptDtldData !== apptDtldDataHolder) {
       setApptDtldDataHolder(ApptDtldData);
-      console.log('ApptDtldData: ', ApptDtldData);
+      console.log('ApptDtldData: ', apptDtldDataHolder);
     }
     if (ApptSmmrData !== apptSmmrDataHolder) {
       setApptSmmrDataHolder(ApptSmmrData);
-      console.log('ApptSmmrData: ', ApptSmmrData);
+      console.log('ApptSmmrData: ', apptSmmrDataHolder);
     }
     // if (BillSmmrData !== billSmmrDataHolder) {
     //   setBillSmmrDataHolder(BillSmmrData);
