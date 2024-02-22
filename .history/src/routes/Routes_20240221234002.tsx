@@ -17,7 +17,6 @@ import Team from '../pages/team';
 import Form from '../pages/form';
 import Calendar from '../pages/calendar';
 import FAQ from '../pages/faq';
-import Invoices from '../pages/invoices';
 
 type Props = {};
 
@@ -59,7 +58,6 @@ const Routes = (props: Props) => {
           <Route element={<PrivateRoutes />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/appointment" element={<Appointment />} />
-            <Route path="/invoices" element={<Invoices />} />
             <Route path="/team" element={<Team />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/form" element={<Form />} />

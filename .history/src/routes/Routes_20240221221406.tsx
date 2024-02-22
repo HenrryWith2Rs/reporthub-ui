@@ -12,12 +12,6 @@ import Line from '../pages/line';
 import Geography from '../pages/geography';
 import Dashboard from '../pages/dashboard';
 import Error from '../pages/error';
-import Contacts from '../pages/contacts';
-import Team from '../pages/team';
-import Form from '../pages/form';
-import Calendar from '../pages/calendar';
-import FAQ from '../pages/faq';
-import Invoices from '../pages/invoices';
 
 type Props = {};
 
@@ -59,12 +53,6 @@ const Routes = (props: Props) => {
           <Route element={<PrivateRoutes />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/appointment" element={<Appointment />} />
-            <Route path="/invoices" element={<Invoices />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/form" element={<Form />} />
-            {/* <Route path="/calendar" element={<Calendar />} /> */}
-            <Route path="/faq" element={<FAQ />} />
             <Route path="/pie" element={<Pie />} />
             <Route path="/line" element={<Line />} />
             <Route path="/geography" element={<Geography />} />
