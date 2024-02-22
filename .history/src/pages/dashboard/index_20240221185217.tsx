@@ -58,8 +58,7 @@ const Dashboard = () => {
     formattedEndDate,
     'detailed',
     'json',
-    isFetchEnabled,
-    'appointment'
+    isFetchEnabled
   );
 
   // ApptSmmr
@@ -88,8 +87,7 @@ const Dashboard = () => {
   //   formattedEndDate,
   //   'summary',
   //   'json',
-  //   isFetchEnabled,
-  // "appointment"
+  //   isFetchEnabled
   // );
 
   // Log loading, error, or API response

@@ -12,10 +12,10 @@ import {
   fetchBillingData,
 } from '../api/koreBotDataFetcher';
 import { AuthContext } from '../../context/AuthContext';
-
 const getToken = () => {
   const { token } = useContext(AuthContext);
   if (!token) throw new Error('Token not found');
+
   return token;
 };
 
@@ -35,12 +35,10 @@ export const useAppointmentData = (
     dateStart,
     dateEnd,
   };
-  const token = getToken();
-  console.log('token ->', token);
 
   const { data, isFetching, error, refetch } = useQuery({
     queryKey: [`${botType}${reportType}${identifier}Data`, dateStart, dateEnd],
-    queryFn: () => fetchAppointmentData(params, token),
+    queryFn: () => fetchAppointmentData(params),
     enabled: isFetchEnabled,
   });
 
@@ -71,11 +69,9 @@ export const useBillingData = (
     dateEnd,
   };
 
-  const token = getToken();
-
   const { data, isFetching, error, refetch } = useQuery({
     queryKey: [`${botType}${reportType}${identifier}Data`, dateStart, dateEnd],
-    queryFn: () => fetchBillingData(params, token),
+    queryFn: () => fetchBillingData(params),
     enabled: isFetchEnabled,
   });
 

@@ -59,6 +59,7 @@ const Dashboard = () => {
     'detailed',
     'json',
     isFetchEnabled,
+
     'appointment'
   );
 

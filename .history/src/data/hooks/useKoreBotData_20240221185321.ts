@@ -1,5 +1,4 @@
 // data/hooks/useKoreBotData.ts
-import { useContext } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import {
   RequestParameters,
@@ -11,13 +10,8 @@ import {
   fetchAppointmentData,
   fetchBillingData,
 } from '../api/koreBotDataFetcher';
+import { useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
-
-const getToken = () => {
-  const { token } = useContext(AuthContext);
-  if (!token) throw new Error('Token not found');
-  return token;
-};
 
 export const useAppointmentData = (
   botType: string,
@@ -26,7 +20,8 @@ export const useAppointmentData = (
   reportType: string,
   format: string,
   isFetchEnabled: boolean,
-  identifier: string
+  identifier: string,
+  "appointment"
 ) => {
   const params: RequestParameters = {
     bot: botType as BotType,
@@ -35,12 +30,10 @@ export const useAppointmentData = (
     dateStart,
     dateEnd,
   };
-  const token = getToken();
-  console.log('token ->', token);
 
   const { data, isFetching, error, refetch } = useQuery({
-    queryKey: [`${botType}${reportType}${identifier}Data`, dateStart, dateEnd],
-    queryFn: () => fetchAppointmentData(params, token),
+    queryKey: [`${botType}${reportType}Data`, dateStart, dateEnd],
+    queryFn: () => fetchAppointmentData(params),
     enabled: isFetchEnabled,
   });
 
@@ -71,15 +64,12 @@ export const useBillingData = (
     dateEnd,
   };
 
-  const token = getToken();
-
   const { data, isFetching, error, refetch } = useQuery({
-    queryKey: [`${botType}${reportType}${identifier}Data`, dateStart, dateEnd],
-    queryFn: () => fetchBillingData(params, token),
+    queryKey: [`${botType}Data`, dateStart, dateEnd],
+    queryFn: () => fetchBillingData(params),
     enabled: isFetchEnabled,
   });
 
-  console.log(`queryKey: ${botType}${reportType}${identifier}Data`);
   return {
     data,
     isFetching,

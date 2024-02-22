@@ -58,8 +58,7 @@ const Dashboard = () => {
     formattedEndDate,
     'detailed',
     'json',
-    isFetchEnabled,
-    'appointment'
+    isFetchEnabled
   );
 
   // ApptSmmr

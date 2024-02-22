@@ -1,7 +1,7 @@
 // appointment index.tsx
-import { useState, useEffect } from 'react';
-import { tokens } from '../../ThemeRegistry/theme';
-import Header from '../../components/Header';
+import { useState, useEffect } from "react"
+import { tokens } from "../../ThemeRegistry/theme"
+import Header from "../../components/Header"
 import {
   useTheme,
   Box,
@@ -14,97 +14,96 @@ import {
   CircularProgress,
   Tab,
   Tabs,
-} from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
-import WebIcon from '@mui/icons-material/Web';
-import TableViewIcon from '@mui/icons-material/TableView';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import { DatePicker, ArrowLeftIcon, ArrowRightIcon } from '@mui/x-date-pickers';
+} from "@mui/material"
+import SendIcon from "@mui/icons-material/Send"
+import WebIcon from "@mui/icons-material/Web"
+import TableViewIcon from "@mui/icons-material/TableView"
+import BarChartIcon from "@mui/icons-material/BarChart"
+import Select, { SelectChangeEvent } from "@mui/material/Select"
+import { DatePicker, ArrowLeftIcon, ArrowRightIcon } from "@mui/x-date-pickers"
 import {
   getLastNDays,
   formatDate,
   decreaseDateByOneDay,
   increaseDateByOneDay,
-} from '../../utils/dateUtils';
-import { ReportType } from '../../types/koreTypes';
-import { useAppointmentData } from '../../data/hooks/useKoreBotData';
-import { renderByFormat } from '../../data/utils/koreDataUtils';
+} from "../../utils/dateUtils"
+import { ReportType } from "../../types/koreTypes"
+import { useAppointmentData } from "../../data/hooks/useKoreBotData"
+import { renderByFormat } from "../../data/utils/koreDataUtils"
 
 const Appointment = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const theme = useTheme()
+  const colors = tokens(theme.palette.mode)
 
   // State variables
-  const [dateStart, setDateStart] = useState<Date | null>(new Date());
-  const [dateEnd, setDateEnd] = useState<Date | null>(new Date());
-  const [reportType, setReportType] = useState<ReportType>('summary');
-  const [isFetchEnabled, setIsFetchEnabled] = useState<boolean>(false);
-  const [apiResponse, setApiResponse] = useState<any | null>(null);
-  const [isRenderable, setIsRenderable] = useState<boolean>(false);
-  const [viewAs, setViewAs] = useState<string>('html');
+  const [dateStart, setDateStart] = useState<Date | null>(new Date())
+  const [dateEnd, setDateEnd] = useState<Date | null>(new Date())
+  const [reportType, setReportType] = useState<ReportType>("summary")
+  const [isFetchEnabled, setIsFetchEnabled] = useState<boolean>(false)
+  const [apiResponse, setApiResponse] = useState<any | null>(null)
+  const [isRenderable, setIsRenderable] = useState<boolean>(false)
+  const [viewAs, setViewAs] = useState<string>("html")
 
   // Effect to set initial date values
   useEffect(() => {
-    const { startDate, endDate } = getLastNDays(1);
-    setDateStart(startDate);
-    setDateEnd(endDate);
-  }, []);
+    const { startDate, endDate } = getLastNDays(1)
+    setDateStart(startDate)
+    setDateEnd(endDate)
+  }, [])
 
   // Format date values
-  const formattedStartDate = formatDate(dateStart);
-  const formattedEndDate = formatDate(dateEnd);
+  const formattedStartDate = formatDate(dateStart)
+  const formattedEndDate = formatDate(dateEnd)
 
   // Fetch data using useBotData
   const { data, isFetching, error, refetch } = useAppointmentData(
-    'appointment',
+    "appointment",
     formattedStartDate,
     formattedEndDate,
     reportType,
-    'json',
-    isFetchEnabled,
-    'APPT'
-  );
+    "json",
+    isFetchEnabled
+  )
 
   // Log loading, error, or API response
   if (isFetching) {
-    console.log('Loading...');
+    console.log("Loading...")
   } else if (error) {
-    console.error('Error fetching data');
+    console.error("Error fetching data")
   } else if (data && data !== apiResponse) {
-    console.log('API Response:', data);
-    setApiResponse(data);
-    setIsRenderable(true);
+    console.log("API Response:", data)
+    setApiResponse(data)
+    setIsRenderable(true)
   }
   // Handle left arrow button click
   const handleLeftArrowClick = () => {
-    setDateStart(decreaseDateByOneDay(dateStart));
-    setDateEnd(decreaseDateByOneDay(dateEnd));
-  };
+    setDateStart(decreaseDateByOneDay(dateStart))
+    setDateEnd(decreaseDateByOneDay(dateEnd))
+  }
 
   // Handle right arrow button click
   const handleRightArrowClick = () => {
-    setDateStart(increaseDateByOneDay(dateStart));
-    setDateEnd(increaseDateByOneDay(dateEnd));
-  };
+    setDateStart(increaseDateByOneDay(dateStart))
+    setDateEnd(increaseDateByOneDay(dateEnd))
+  }
 
   // Handle select change
   const handleSelectChange = (event: SelectChangeEvent) => {
-    setReportType(event.target.value as ReportType);
-    setIsRenderable(false);
-  };
+    setReportType(event.target.value as ReportType)
+    setIsRenderable(false)
+  }
 
   // Handle Tabs
   const handleTabChange = (_event: React.SyntheticEvent, newValue: string) => {
-    setViewAs(newValue);
-  };
+    setViewAs(newValue)
+  }
 
   // Handle form submission
   const handleSubmit = () => {
-    setIsFetchEnabled(true); // Enable fetching
-    refetch(); // Trigger API call
-    setIsFetchEnabled(false); // Disable fetching once more until next submit
-  };
+    setIsFetchEnabled(true) // Enable fetching
+    refetch() // Trigger API call
+    setIsFetchEnabled(false) // Disable fetching once more until next submit
+  }
 
   return (
     <Box m="20px">
@@ -136,8 +135,8 @@ const Appointment = () => {
               label="Report"
               onChange={handleSelectChange}
             >
-              <MenuItem value={'summary'}>Summary</MenuItem>
-              <MenuItem value={'detailed'}>Detailed</MenuItem>
+              <MenuItem value={"summary"}>Summary</MenuItem>
+              <MenuItem value={"detailed"}>Detailed</MenuItem>
             </Select>
           </FormControl>
           <Button
@@ -161,13 +160,13 @@ const Appointment = () => {
                 aria-label="icon label tabs"
                 textColor="inherit"
                 sx={{
-                  '& .Mui-selected': {
+                  "& .Mui-selected": {
                     color: `${colors.primary[100]}`,
                   },
-                  '& .MuiTabs-indicator': {
+                  "& .MuiTabs-indicator": {
                     backgroundColor: `${colors.greenAccent[400]}`,
                   },
-                  marginBottom: '40px',
+                  marginBottom: "40px",
                 }}
               >
                 <Tab value="html" icon={<WebIcon />} label="EXCEL" />
@@ -176,7 +175,7 @@ const Appointment = () => {
               </Tabs>
               {renderByFormat(
                 apiResponse,
-                'appointment',
+                "appointment",
                 reportType,
                 viewAs,
                 formatDate(dateStart)
@@ -188,7 +187,7 @@ const Appointment = () => {
         </Box>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default Appointment;
+export default Appointment
