@@ -11,7 +11,6 @@ import Pie from '../pages/pie';
 import Line from '../pages/line';
 import Geography from '../pages/geography';
 import Dashboard from '../pages/dashboard';
-import Error from '../pages/error';
 
 type Props = {};
 
@@ -56,7 +55,6 @@ const Routes = (props: Props) => {
             <Route path="/pie" element={<Pie />} />
             <Route path="/line" element={<Line />} />
             <Route path="/geography" element={<Geography />} />
-            <Route path="*" element={<Error />} />
           </Route>
         </Router>
       </div>
