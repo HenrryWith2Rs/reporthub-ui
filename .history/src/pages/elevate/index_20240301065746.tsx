@@ -1,45 +1,40 @@
 import { Box } from '@mui/material';
 import { DataGrid, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { tokens } from '../../ThemeRegistry/theme';
-// import { mockDataContacts } from '../../data/mockData';
-import { mockDataProperties } from '../../data/mockProperties';
+
+import { mockDataElevate } from '../../data/mockElevate';
 import Header from '../../components/Header';
 import { useTheme } from '@mui/material';
 
-const Elevate = () => {
+const Properties = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  const properties = mockDataProperties;
+  const properties = mockDataElevate;
 
   const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', flex: 0.5 },
-    { field: 'guestName', headerName: 'Guest Name', flex: 1 },
-    { field: 'guestFirstName', headerName: 'Guest First Name', flex: 1 },
-    { field: 'guestLastName', headerName: 'Guest Last Name', flex: 1 },
-    { field: 'checkInDate', headerName: 'Check-in Date', flex: 1 },
-    { field: 'checkOutDate', headerName: 'Check-out Date', flex: 1 },
-    { field: 'channel', headerName: 'Channel', flex: 1 },
+    { field: 'date', headerName: 'Date', flex: 1 },
     {
-      field: 'totalPrice',
-      headerName: 'Total Price',
-      flex: 1,
-      valueFormatter: ({ value }) => `$${value}`,
+      headerName: 'On The Books',
+      children: [
+        { field: 'oooRMSAvailable', headerName: 'OOO RMS Available', flex: 1 },
+        { field: 'leftToSell', headerName: 'Left to Sell', flex: 1 },
+        { field: 'onTheBooks', headerName: 'On the Books', flex: 1 },
+        { field: 'totalOccPerc', headerName: 'Total Occ Perc', flex: 1 },
+        { field: 'adr', headerName: 'ADR', flex: 1 },
+      ],
     },
-    {
-      field: 'airbnbExpectedPayoutAmount',
-      headerName: 'Airbnb Expected Payout Amount',
-      flex: 1,
-      valueFormatter: ({ value }) => `$${value}`,
-    },
-    { field: 'status', headerName: 'Status', flex: 1 },
-    { field: 'listing', headerName: 'Listing', flex: 1 },
-    {
-      field: 'cleaningFee',
-      headerName: 'Cleaning Fee',
-      flex: 1,
-      valueFormatter: ({ value }) => `$${value}`,
-    },
+    { field: 'revenue', headerName: 'Revenue', flex: 1 },
+    { field: 'revPar', headerName: 'RevPar', flex: 1 },
+    { field: 'groupOtb', headerName: 'Group OTB', flex: 1 },
+    { field: 'groupBlock', headerName: 'Group Block', flex: 1 },
+    { field: 'barOtb', headerName: 'Bar OTB', flex: 1 },
+    { field: 'bar8WeekRolling', headerName: 'Bar 8 Week Rolling', flex: 1 },
+    { field: 'rooms', headerName: 'Rooms', flex: 1 },
+    { field: 'biForecast', headerName: 'BI Forecast', flex: 1 },
+    { field: 'r28Avg', headerName: 'R28 Avg', flex: 1 },
+    { field: 'optimalBar', headerName: 'Optimal Bar', flex: 1 },
   ];
 
   return (
@@ -89,4 +84,4 @@ const Elevate = () => {
   );
 };
 
-export default Elevate;
+export default Properties;

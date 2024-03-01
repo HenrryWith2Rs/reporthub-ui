@@ -110,9 +110,7 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.grey[100]}>
-                  Elevate
-                </Typography>
+                <Typography variant="h3" color={colors.grey[100]}></Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
                 </IconButton>
@@ -160,13 +158,6 @@ const Sidebar = () => {
             <Item
               title="Properties"
               to="/properties"
-              icon={<AttachMoneyIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Elevate"
-              to="/elevate"
               icon={<AttachMoneyIcon />}
               selected={selected}
               setSelected={setSelected}

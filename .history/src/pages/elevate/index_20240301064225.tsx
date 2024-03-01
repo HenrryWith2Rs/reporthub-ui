@@ -1,16 +1,16 @@
 import { Box } from '@mui/material';
 import { DataGrid, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { tokens } from '../../ThemeRegistry/theme';
-// import { mockDataContacts } from '../../data/mockData';
-import { mockDataProperties } from '../../data/mockProperties';
+
+import { mockDataElevate } from '../../data/mockElevate';
 import Header from '../../components/Header';
 import { useTheme } from '@mui/material';
 
-const Elevate = () => {
+const Properties = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  const properties = mockDataProperties;
+  const properties = mockDataElevate;
 
   const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', flex: 0.5 },
@@ -89,4 +89,4 @@ const Elevate = () => {
   );
 };
 
-export default Elevate;
+export default Properties;

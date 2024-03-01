@@ -6,7 +6,7 @@ import { mockDataProperties } from '../../data/mockProperties';
 import Header from '../../components/Header';
 import { useTheme } from '@mui/material';
 
-const Elevate = () => {
+const Properties = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -89,4 +89,4 @@ const Elevate = () => {
   );
 };
 
-export default Elevate;
+export default Properties;
